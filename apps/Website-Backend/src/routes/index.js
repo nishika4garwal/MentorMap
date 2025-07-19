@@ -39,5 +39,6 @@ router.use("/api/v1/user", UserRouter);
 router.use("/api/v1/blog", BlogRouter);
 router.use('/api/v1/community', FaqRoutes);
 
-// router.use("/api/v1/videocall",Videocallroutes);
+// router.use("/api/v1/videocall",Videocallroutes); //videocall route is not mounted together on a separate index.js as it is a 
+//microservice-like structure running separately using Hono.js, a fast Cloudflare Workers framework and on endpoint /llm in Videocallroutes.js
 export default router;
