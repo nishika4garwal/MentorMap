@@ -18,7 +18,7 @@ const Chatbot = () => {
         setIsLoading(true); // Start loading when the user sends a message
 
         try {
-            const response = await fetch('http://localhost:3000/chat', {
+            const response = await fetch('http://localhost:3000/chat', { ///chat is in main index in backend
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
